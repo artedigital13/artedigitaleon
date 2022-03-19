@@ -3,56 +3,238 @@
     margin: 0;
     padding: 0;
     font-family: 'Oswald', sans-serif;
-    width:65vh;
+    overflow-x: hidden;
+}
+.text{
+    background-color: orange;
+    height: 150px;
+}
+.text h1{
+    position: relative;
+    top: 25px;
+    left: 44%;
+}
+.text h3{
+    position: relative;
+    top:25px;
+    left: 44%;
+}
+#banner{
+    width: 95%;
+    margin: auto;
+    overflow: hidden;
+}
+#banner ul{
+    display: flex;
+    padding:0;
+    width: 400%;
+    animation: cambio 20s infinite alternate linear;
+}
+#banner li{
+    list-style: none;
+    width: 100%;
+}
+#banner img{
+    width: 1920px;
+    height:600px;
+    position: relative;
+    left: 45px;
+    
+}
+#banner:nth-child(2) ul{
+    animation-timing-function: ease-in;
+}
+@keyframes cambio{
+    0% {margin-left: 0;}
+    20% {margin-left: 0;}
+    25% {margin-left: -100%;}
+    45% {margin-left: -100%;}
+    50% {margin-left: -200%;}
+    70% {margin-left: -200%;}
+    75% {margin-left: -200%;}
+    100% {margin-left: -200%;}
+}
+table{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+section{
+    border-radius: 25px;
+    overflow: hidden;
+}
+td{
+    padding: 18px;
+    width: 900px;
 }
 .texting{
     position: relative;
-    left: 75px;
-    top: -42px;
+    left: 135px;
+    top: -72px;
+    font-size: 28px;
 }
 .texting a{
-    color: #E7E7E7;
+    color: #fff;
+    text-decoration: none;
+}
+a{
+    text-decoration: none;
+    color:#fff;
 }
 #wp{
-    background-color: #075E54; 
-    height: 65px;
+    background-image: url("img/bgwp.png");
+    background-position: center;
+    height: 150px;
     color: white;
+    width: 100%;
 }
 #wp2{
-    background-color: #128C7E; 
-    height: 65px;
+    background-image: url("img/bgwp.png");
+    background-position: center;
+    height: 150px;
     color: white;
 
 }
 #tgm{
-    background-color: #E6E9EF; 
-    height: 65px;
-    color: black;
+    background-image: url("img/bgtlg.jpg");
+    background-position: center;
+    height: 150px;
+    color: #fff;
 }
 #fb{
-    background-color: #9CB2CE; 
-    height: 65px;
-    color: black;
+    background-image: url("img/bgfb.png");
+    background-position: center;
+    height: 150px;
+    background-size: cover;
 }
 #ig{
-    background-color: #FEDA77; 
-    height: 65px;
-    color: black;
+    background-image: url("img/bgig.png");
+    background-position: center;
+    height: 150px;
+    color: #000;
 }
 .socialmedia{
     position: relative;
-    top: 9px;
-    left: 9px;
+    top: 25px;
+    left: 20px;
 }
-
-.orangebox{
-    align-items:center;
-    display: flex;
-    justify-content: center;
-
-    background-color: #FF6000;
-    color:black;
-    height: 100px;
-    width:100%;
-    font-size: 26px;
+.socialmedia img{
+    width: 90px;
+    height: 90px;
+}
+@media (max-width: 390px) {
+    .text{
+        height: 140px;
+    }
+    #wp{
+        position: relative;
+        top:-5px;
+    }
+    #wp2{
+        position: relative;
+        top:-5px;
+    }
+    #wp .socialmedia{
+        position: relative;
+        top:15px;
+        left: 55px;
+    }
+    #wp2 .socialmedia{
+        position: relative;
+        top:15px;
+        left: 55px;
+    }
+    #fb .socialmedia{
+        position: relative;
+        top:15px;
+        left: 55px;
+    }
+    #tgm .socialmedia{
+        position: relative;
+        top:15px;
+        left: 55px;
+    }
+    #wp .texting{
+        position: relative;
+        top:15px;
+        left: 9px;
+    }
+    #wp2 .texting{
+        position: relative;
+        top:15px;
+        left: 9px;
+    }
+    h1{
+        position: relative;
+        top: 25px;
+        left: 50%;
+    }
+    #banner img{
+        width: 390px;
+        height:auto;
+        position: relative;
+        left: 3px;
+    }
+    .socialmedia img{
+        width: 49px;
+        height: 49px;
+        position: relative;
+        
+    }
+    .texting{
+        position: relative;
+        left: 8px;
+        top:10px;
+        font-size: 14px;
+    }
+    .texting a{
+        color: #fff;
+        text-decoration: none;
+    }
+    #ig .texting{
+        position: relative;
+        left: 22px;
+    }
+}
+@media (max-width:700px){
+    .text{
+        height: 140px;
+    }
+    .text h1{
+        position: relative;
+        top: 25px;
+        left: 35%;
+    }
+    .text h3{
+        position: relative;
+        top:25px;
+        left: 38%;
+    }
+    #banner img{
+        width:700px;
+        height:auto;
+        position: relative;
+        left: 3px;
+    }
+    .socialmedia img{
+        width: 49px;
+        height: 49px;
+        position: relative;
+        
+    }
+    .texting{
+        position: relative;
+        left: 18px;
+        top:25px;
+        font-size: 18px;
+    }
+    .texting a{
+        color: #fff;
+        text-decoration: none;
+    }
+    #ig .texting{
+        position: relative;
+        left: 22px;
+    }
 }
