@@ -89,6 +89,20 @@ a{
     color: white;
     width: 100%;
 }
+#tt{
+    background-color: black;
+    background-position: center;
+    height: 150px;
+    color: white;
+    width: 100%;
+}
+#mg{
+    background-image: url("img/bgmg.png");
+    background-position: center;
+    height: 150px;
+    color: white;
+    width: 100%;
+}
 #wp2{
     background-image: url("img/bgwp.png");
     background-position: center;
